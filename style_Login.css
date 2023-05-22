@@ -1,0 +1,20 @@
+body {
+    overflow: hidden;
+  }
+
+  .tab-content {
+    background-color: #fff;
+    padding: 1rem;
+  }
+
+  .tab-content label::first-letter {
+    text-transform: uppercase;
+
+  }
+  .cuadro-izq-fuera{
+    max-width: 30%;
+    margin-left: 0;
+
+  }
+  
+  
