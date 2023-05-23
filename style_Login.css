@@ -26,7 +26,7 @@ header{
     margin-top: 1%;
     margin-left: 3%;
     box-shadow:0 0 5px purple, 0 0 15px purple, 0 0 30px purple, 0 0 50px purple;
-    animation: parpadear 5s infinite backwards;
+    animation: parpadear 3s infinite alternate-reverse;
   }
   @keyframes parpadear {
     to {
@@ -46,11 +46,11 @@ header{
     height: 10%;
   }
   .izquierda{
-    color:red;
+    color:purple;
     display: inline;
   }
   .centro{
-    color:red;
+    color:white;
     display: inline;
   }
   .derecha{
