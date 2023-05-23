@@ -8,6 +8,12 @@ header{
   
 }
 
+.logotipo{
+  background-color: #2d2f3d;
+  border-radius: 100%;
+  margin-top: -12%;
+  position:absolute;
+}
 
 .login-box {
   background-color: rgba(128, 128, 128, 0.2); 
