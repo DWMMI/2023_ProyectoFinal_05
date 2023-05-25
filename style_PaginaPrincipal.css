@@ -1,0 +1,129 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: #fff;
+      margin: 0;
+      padding: 0; background-color: greenyellow;
+    }
+
+    .header {
+      background-color: purple;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      color: greenyellow;
+    }
+
+
+    .search-container {
+      background-color: purple;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #search-input {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    #search-input:focus {
+      outline: none;
+    }
+
+    #home-button{
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: greenyellow;
+        border: none;
+        border-radius: 4px;
+        color: #222;
+        cursor: pointer;
+
+    }
+    #search-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: greenyellow;
+      border: none;
+      border-radius: 4px;
+      color: #222;
+      cursor: pointer;
+    }
+
+    #search-button:hover {
+      background-color: greenyellow;
+    }
+
+    .video-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+  
+      .video-player {
+        width: 300px;
+        height: 169px;
+        margin: 20px;
+      }
+
+      .search-panel {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+        background-color: purple;
+        color: #ffffff;
+      }
+  
+      .search-panel input[type="text"] {
+        display: none;
+        padding: 5px;
+        margin-left: 10px;
+        width: 200px;
+      }
+  
+      .search-panel.active input[type="text"] {
+        display: block;
+      }
+  
+      .search-panel .search-icon {
+        cursor: pointer;
+      }
+
+      .search-panel {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px;
+      background-color: purple;
+      color: #ffffff;
+    }
+
+    .search-panel input[type="text"] {
+      display: none;
+      padding: 5px;
+      margin-left: 10px;
+      width: 200px;
+    }
+
+    .search-panel.active input[type="text"] {
+      display: block;
+    }
+
+    .search-panel .search-icon {
+      cursor: pointer;
+    }
+  
+      @media only screen and (max-width: 768px) {
+        .video-player {
+          width: 100%;
+          height: auto;
+          margin: 20px 0;
+        }
+      }
