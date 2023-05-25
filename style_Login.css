@@ -8,11 +8,33 @@ header{
   
 }
 
+.registrarse{
+  float: right;
+  margin-left: auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: greenyellow;
+  font-family: sans-serif;
+}
+
+.boton-registro{
+  color:white;
+  background-color:purple;
+  border-radius: 2rem;
+
+}
+
 .logotipo{
-  background-color: #2d2f3d;
+  background-color: white;
   border-radius: 100%;
   margin-top: -12%;
+  margin-left: 40%;
   position:absolute;
+}
+
+form{
+  float: center;
+  margin: center;
 }
 
 .login-box {
