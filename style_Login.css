@@ -17,7 +17,7 @@ button{
 
 .registrarse{
 
-  margin-right:3%;
+  margin-right:3rem;
   float: right;
   padding: 1rem;
   border-radius: 2rem;
@@ -34,20 +34,15 @@ button{
 .logotipo{
   background-color: white;
   border-radius: 100%;
-  margin-top: -12%;
-  margin-left: 40%;
+  margin-top: -5rem;
+  margin-left: 37%;
   position:absolute;
-}
-
-form{
-  float: center;
-  margin: center;
 }
 
 .login-box {
   background-color: rgba(128, 128, 128, 0.2); 
-  width: 550px; 
-  height: 420px; 
+  width: 30rem; 
+  height: 30rem; 
   color:aliceblue;
   margin-top: 15%;
   margin-left: 48%;
@@ -56,18 +51,18 @@ form{
   border-radius: 6%;
 }
 
-  .cuadro-izq-fuera{
-    max-width: 30%;
-    margin-top: 1%;
-    margin-left: 3%;
-    box-shadow:0 0 5px purple, 0 0 15px purple, 0 0 30px purple, 0 0 50px purple;
-    animation: parpadear 2s infinite alternate-reverse;
-  }
-  @keyframes parpadear {
-    to {
+.cuadro-izq-fuera{
+  max-width: 30%;
+  margin-top: 1%;
+  margin-left: 3%;
+  box-shadow:0 0 5px purple, 0 0 15px purple, 0 0 30px purple, 0 0 50px purple;
+  animation: parpadear 2s infinite alternate-reverse;
+}
+@keyframes parpadear {
+  to {
       box-shadow: 0 0 5px greenyellow, 0 0 15px greenyellow, 0 0 30px greenyellow, 0 0 50px greenyellow;
     }
-  }
+}
 
   .cuadro-izq-fuera-interior{
     margin-top: 15px;
@@ -107,6 +102,7 @@ form{
   label{
     font-size: 1.5rem;
   }
+
 
 
   
