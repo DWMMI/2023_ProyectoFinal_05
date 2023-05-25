@@ -1,6 +1,6 @@
 body {
-   background-color: rgb(0, 0, 0);
    background: radial-gradient(circle at 49% 0, #2d2f3d, #070714 51%, #060613 52%);
+   font-size: 16px;
   }
 
 header{
@@ -8,9 +8,17 @@ header{
   
 }
 
+button{
+  color:white;
+  background-color: red;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
 .registrarse{
+
+  margin-right:3%;
   float: right;
-  margin-left: auto;
   padding: 1rem;
   border-radius: 2rem;
   background: greenyellow;
@@ -21,7 +29,6 @@ header{
   color:white;
   background-color:purple;
   border-radius: 2rem;
-
 }
 
 .logotipo{
@@ -54,7 +61,7 @@ form{
     margin-top: 1%;
     margin-left: 3%;
     box-shadow:0 0 5px purple, 0 0 15px purple, 0 0 30px purple, 0 0 50px purple;
-    animation: parpadear 3s infinite alternate-reverse;
+    animation: parpadear 2s infinite alternate-reverse;
   }
   @keyframes parpadear {
     to {
@@ -85,3 +92,21 @@ form{
     color:greenyellow;
     display: inline;
   }
+
+  a{
+    color:greenyellow;
+  }
+
+  input{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+  }
+
+  label{
+    font-size: 1.5rem;
+  }
+
+
+  
