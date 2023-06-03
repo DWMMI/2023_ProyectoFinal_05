@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: #222;
       color: #fff;
       margin: 0;
@@ -7,6 +9,7 @@ body {
       background-color: greenyellow;
       
     }
+    
 
     .header {
       background-color: purple;
@@ -17,6 +20,7 @@ body {
     .header h1 {
       margin: 0;
       color: greenyellow;
+      font-weight: 700;
     }
 
 
@@ -67,6 +71,7 @@ body {
       justify-content: center; /* Centra horizontalmente los video players */
       align-items: center; /* Centra verticalmente los video players */
       flex-wrap: wrap;
+      gap: 20px;
     }
     
     .video-player {
@@ -97,6 +102,8 @@ body {
       }
   
       .search-panel input[type="text"] {
+        font-size: 16px;
+        border-radius: 4px;
         display: none;
         padding: 5px;
         margin-left: 10px;
@@ -108,15 +115,23 @@ body {
       }
   
       .search-panel .search-icon {
+        padding: 10px;
+        font-size: 16px;
+        background-color: transparent;
+        border: none;
+        color: #fff;
         cursor: pointer;
+        transition: color 0.3s;
+      }
+
+      .search-panel .search-icon:hover {
+        color: #ccc;
       }
 
       
   
       @media only screen and (max-width: 768px) {
         .video-player {
-          width: 100%;
-          height: auto;
-          margin: 20px 0;
+          flex: 1 0 calc(50% - 20px);
         }
       }
