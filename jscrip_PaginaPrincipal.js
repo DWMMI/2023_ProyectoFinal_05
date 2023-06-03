@@ -51,41 +51,16 @@ function cargarVideo(videoId, player) {
   player.loadVideoById(videoId);
 }
 
-// Función para buscar y cargar el video según el término de búsqueda
 function buscarTrailer() {
-  const searchTerm = document.getElementById('search-input').value;
-  // Realizar la búsqueda del trailer por nombre de película
-  const videoId = buscarTrailerPorNombre(searchTerm);
-  if (videoId) {
-    for (let i = 0; i < players.length; i++) {
-      cargarVideo(videoId, players[i]);
-    }
+    const searchTerm = document.getElementById('search-input').value;
+    const searchQuery = searchTerm + " trailer";
+    const searchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery)}`;
+    
+    // Abrir la URL en una nueva pestaña del navegador
+    window.open(searchUrl, '_blank');
   }
-}
+  
 
-// Función para buscar el trailer por nombre de película
-function buscarTrailerPorNombre(nombrePelicula) {
-  const searchTerm = nombrePelicula + " trailer";
-  // Utilizamos la API de búsqueda de YouTube para obtener los resultados
-  const searchUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(
-    searchTerm
-  )}&type=video&key=AIzaSyAOG6z77ts3dkANZROcLmhFHQ6k9mHVi_w`; 
-  // Realizamos la solicitud GET para obtener los resultados
-  return fetch(searchUrl)
-    .then(response => response.json())
-    .then(data => {
-      // Verificamos si se encontraron resultados
-      if (data.items.length > 0) {
-        return data.items[0].id.videoId; // Obtenemos el ID del primer video de los resultados
-      } else {
-        return null; // No se encontraron resultados
-      }
-    })
-    .catch(error => {
-      console.error('Error al buscar el trailer:', error);
-      return null;
-    });
-}
 
 // Evento para mostrar/ocultar el campo de búsqueda al hacer clic en el botón de búsqueda
 const searchButton = document.getElementById('search-button');
