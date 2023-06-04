@@ -106,3 +106,18 @@ input {
 label {
   font-size: 1.5rem;
 }
+
+@media (max-width:768px){
+  .cuadro-izq-fuera {
+    display: none;
+  }
+  .registrarse{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .login-box{
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
